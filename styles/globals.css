@@ -2,16 +2,19 @@ body {
     margin: 0;
     padding: 0;
     font-size: 16px;
+    color: #333;
 }
 
 :root {
     --primary-color: #1aa097;
+    --alt-color: #dfb992;
     --dark-color: #051522;
-    --alt-color: #dfb992
+    --gold-color: #ffbe00
 }
 
 a {
     text-decoration: none !important;
+    color: #333 !important;
 }
 
 .form-select:focus,

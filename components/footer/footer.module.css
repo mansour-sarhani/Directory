@@ -78,7 +78,7 @@
 }
 
 .footerLinks ul li a {
-    color: #ffffff;
+    color: #ffffff !important;
     display: flex;
     align-items: center;
 }

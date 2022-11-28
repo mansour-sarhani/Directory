@@ -5,7 +5,7 @@
 }
 
 .header a:hover {
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
 }
 
 .headerContainer {
@@ -34,7 +34,7 @@
 
 .topMenu ul li a {
     font-size: 13px;
-    color: #fff;
+    color: #fff !important;
     display: flex;
     align-items: center;
     padding: 5px 10px;
@@ -82,7 +82,7 @@
 }
 
 .bottomHeader ul li a {
-    color: #ffffff;
+    color: #ffffff !important;
     display: flex;
     align-items: center;
     padding: 5px 10px;
