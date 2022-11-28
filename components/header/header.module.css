@@ -1,0 +1,89 @@
+.header {
+    background-color: var(--dark-color);
+    width: 100%;
+    height: 120px;
+}
+
+.header a:hover {
+    color: var(--primary-color);
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.topHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.topMenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.topMenu ul li {
+    margin: 0 5px;
+}
+
+.topMenu ul li a {
+    font-size: 13px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.headerLogin a {
+    border-radius: 5px;
+    background: var(--primary-color);
+}
+
+.headerLogin a:hover {
+    color: #ffffff !important;
+}
+
+.bottomHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.mainMenu {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.altMenu {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid var(--alt-color);
+}
+
+.bottomHeader ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.bottomHeader ul li{
+    margin: 0 5px;
+}
+
+.bottomHeader ul li a {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}

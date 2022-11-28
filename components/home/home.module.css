@@ -1,0 +1,470 @@
+.homeWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeFold {
+    height: calc(100vh - 120px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeSearch {
+    width: 50%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.homeSearchContent {
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.homeSearchForm {
+    width: 100%;
+}
+
+.homeSearchField {
+    width: 100%;
+    position: relative;
+}
+
+.homeSearchField input {
+    padding: 20px 50% 20px 20px;
+    font-size: 16px;
+    border-radius: 3em;
+}
+
+.searchFormParts {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 30px;
+    top: 12px;
+}
+
+.searchFormLocation {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid rgba(0,0,0,.3);
+    padding-right: 15px;
+    margin-right: 15px;
+    opacity: .5;
+}
+
+.searchFormCategories {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    opacity: .5;
+}
+
+.searchFormCategories select {
+    border: none;
+}
+
+.searchBtn {
+    border-radius: 3em;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.homeQuickAccess {
+    width: 50%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homeQuickAccessItem {
+    width: 16.6%;
+    border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+.homeQuickAccessItem:last-child {
+    border-right: none;
+}
+
+.homeQuickAccessItem a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #000;
+}
+
+.homeQuickAccessItem svg {
+    font-size: 30px;
+}
+
+.homeTopBanners {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: 50px 0;
+}
+
+.homeTopBannerItem {
+    width: 49%;
+    position: relative;
+}
+
+.homeTopBannerItem a {
+    width: 100%;
+    position: relative;
+    max-height: 200px;
+    display: flex;
+}
+
+.homeTopBannerItem a img {
+    object-fit: contain;
+    position: relative !important;
+    border-radius: 1em;
+}
+
+.homeEvents {
+    width: 100%;
+    margin: 50px 0;
+}
+
+.homeEventsContainer {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.homeEventBlock {
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.homeEventDots {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 15px;
+    left: 15px;
+    border-radius: 1em;
+    border: 2px dashed #ccc;
+}
+
+.homeEventDotsReverse {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 15px;
+    right: 15px;
+    border-radius: 1em;
+    border: 2px dashed #ccc;
+}
+
+.homeEventBlockGallery {
+    width: 50%;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: auto auto;
+    box-shadow: 11px -2px 20px 3px rgb(241 241 241);
+    padding: 20px;
+    border-radius: 1em;
+    position: relative;
+    background: #fff;
+    z-index: 1;
+}
+
+.homeEventBlockGalleryReverse {
+    width: 50%;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: auto auto;
+    box-shadow: -2px 11px 20px 3px rgb(241 241 241);
+    padding: 20px;
+    border-radius: 1em;
+    position: relative;
+    background: #fff;
+    z-index: 1;
+}
+
+.homeGalleryWrapper {
+    position: relative;
+}
+
+.homeGalleryWrapper a {
+    display: flex;
+    max-height: 170px;
+    position: relative;
+    color: #ffffff;
+}
+
+.homeGalleryWrapper a img {
+    object-fit: cover;
+    height: 170px !important;
+    position: relative !important;
+    border-radius: 1em;
+}
+
+.homeGalleryOverlay {
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+    height: 65px;
+    background: transparent;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    bottom: -10px;
+    right: 25%;
+    left: 25%;
+    border-radius: 3em 3em 1em 1em;
+    transform: scale(1.13);
+}
+
+.homeGalleryOverlayText {
+    position: absolute;
+    z-index: 5;
+    width: 50%;
+    height: 50px;
+    background: transparent;
+    bottom: 5px;
+    right: 25%;
+    left: 25%;
+    border-radius: 3em 3em 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.homeEventBlockContent {
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.homeEventIcon {
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    width: 70px;
+    height: 70px;
+}
+
+.homeEventIcon:before {
+    content:'';
+    width:100%;
+    height:100%;
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    background:linear-gradient(transparent -30px, white);
+}
+
+.homeEventIcon svg {
+    font-size: 70px;
+    color: #e5e5e5
+}
+
+.homeLatest {
+    width: 100%;
+    padding: 150px 0 40px;
+    background: #f3f4f8;
+    position: relative;
+}
+
+.homeLatest:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    right: 0;
+    left: 0;
+    top: -0;
+    background: #fff;
+    clip-path: ellipse(52% 100% at 50% 0%);
+}
+
+.homeLatestChevron {
+    position: absolute;
+    color: var(--alt-color);
+    font-size: 35px;
+    background: #f3f4f8;
+    border-radius: 50%;
+    width: 120px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 75px;
+    right: 48%;
+    left: 48%;
+}
+
+.homeLatestIntro {
+    width: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.homeLatestFilters {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.homeLatestFilterCats button {
+    border: none;
+    background: #ffffff;
+    padding: 7px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.homeLatestFilterCats button:focus,
+.homeLatestFilterCats button:active {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.homeLatestFilterCats button svg{
+    margin-right: 5px;
+}
+
+.homeLatestFilterLocation button {
+    border: 1px solid #a4a4a4;
+    background: #ffffff;
+    padding: 7px 15px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.homeLatestFilterLocation button span{
+    margin-left: 5px;
+    color: var(--alt-color);
+}
+
+.homeLatestGrid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+}
+
+.homeLatestItem {
+    background: #ffffff;
+    border-radius: 1em;
+}
+
+.homeLatestItemImage a {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: 170px;
+}
+
+.homeLatestItemImage img {
+    border-radius: 1em 1em 0 0;
+    object-fit: cover;
+}
+
+.homeLatestItemContent {
+    padding: 15px;
+}
+
+.homeLatestItemTitle {
+    color: #051522;
+    font-weight: bold;
+}
+
+.homeLatestItemTitle:hover {
+    color: var(--primary-color);
+}
+
+.homeLatestItemAuthor {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.homeLatestItemAuthor span {
+    font-size: 13px;
+    opacity: 0.6;
+    color: #000;
+}
+
+.homeLatestItemMeta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.homeLatestItemVariable {
+    color: var(--primary-color);
+}
+
+.homeLatestItemDate {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.homeLatestCta {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.homeAddPost {
+    width: 100%;
+    padding: 70px 0;
+}
+
+.homeAddPostContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.homeAddPostImage {
+    width: 50%;
+    position: relative;
+    height: 460px;
+}
+
+.homeAddPostImage img {
+    height: auto !important;
+    object-fit: contain;
+}
+
+.homeAddPostContent {
+    width: 50%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
