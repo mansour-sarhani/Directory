@@ -6,10 +6,9 @@ body {
 }
 
 :root {
-    --primary-color: #1aa097;
-    --alt-color: #dfb992;
+    --primary-color: #ffbe00;
+    --alt-color: #1aa097;
     --dark-color: #051522;
-    --gold-color: #ffbe00
 }
 
 a {
@@ -108,4 +107,57 @@ a {
 
 .socialIcons ul li:last-child a {
     padding-right: 0;
+}
+
+
+.footerApplication {
+    width: 100%;
+    background: var(--primary-color);
+    position: relative;
+}
+
+.footerApplication:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    right: 0;
+    left: 0;
+    top: 0;
+    background: #fff;
+    clip-path: ellipse(52% 100% at 50% 0%);
+}
+
+.footerApplicationChevron {
+    position: absolute;
+    font-size: 35px;
+    background: var(--primary-color);
+    color: #ffffff;
+    border-radius: 50%;
+    width: 120px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -25px;
+    right: 48%;
+    left: 48%;
+}
+
+.footerApplicationWrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.footerApplicationIntro {
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.footerApplicationImage {
+    position: absolute;
+    bottom: -40px;
+    right: 0;
 }

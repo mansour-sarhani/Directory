@@ -1,0 +1,41 @@
+.categoriesWrapper {
+    width: 100%;
+    margin: 40px 0;
+}
+
+.categoriesGrid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    row-gap: 40px;
+    column-gap: 20px;
+}
+
+.categoryGridItem {
+    position: relative;
+    height: 120px;
+}
+
+.categoryGridItem img {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.categoryGridItemOverlay {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.categoryGridItemOverlay a {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.65);
+    color: #ffffff !important;
+}

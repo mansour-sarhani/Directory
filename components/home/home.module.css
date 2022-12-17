@@ -305,7 +305,7 @@
 
 .homeLatestChevron {
     position: absolute;
-    color: var(--alt-color);
+    color: var(--primary-color);
     font-size: 35px;
     background: #f3f4f8;
     border-radius: 50%;
@@ -368,7 +368,7 @@
 
 .homeLatestFilterLocation button span{
     margin-left: 5px;
-    color: var(--alt-color);
+    color: var(--primary-color);
 }
 
 .homeLatestGrid {

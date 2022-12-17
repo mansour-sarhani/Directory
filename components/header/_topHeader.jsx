@@ -2,8 +2,10 @@ import styles from "./header.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import {BsFlag, BsGrid, BsHouseDoor, BsPersonCircle, BsPlusSquare} from "react-icons/bs";
+import { useRouter } from "next/router";
 
 function TopHeader() {
+    const router = useRouter();
     return (
         <div className={styles.topHeader}>
             <div className="top-logo">
@@ -19,19 +21,19 @@ function TopHeader() {
             <div className={styles.topMenu}>
                 <ul>
                     <li>
-                        <Link href={'/'}>
+                        <Link href={'/'} className={`nav-link ${router.pathname === "/" ? "active" : ""}`}>
                             <BsHouseDoor className="me-1"/>
                             Home
                         </Link>
                     </li>
                     <li>
-                        <Link href={'/'}>
+                        <Link href={'/categories'} className={`nav-link ${router.pathname === "/categories" ? "active" : ""}`}>
                             <BsGrid className="me-1"/>
                             Categories
                         </Link>
                     </li>
                     <li>
-                        <Link href={'/'}>
+                        <Link href={'/countries'} className={`nav-link ${router.pathname === "/countries" ? "active" : ""}`}>
                             <BsFlag className="me-1"/>
                             Countries
                         </Link>

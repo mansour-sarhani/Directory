@@ -67,7 +67,7 @@
     height: 60px;
     display: flex;
     align-items: center;
-    border-bottom: 4px solid var(--alt-color);
+    border-bottom: 4px solid var(--primary-color);
 }
 
 .bottomHeader ul {

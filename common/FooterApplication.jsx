@@ -1,18 +1,17 @@
-import styles from './footer.module.css'
 import {Container} from "react-bootstrap";
 import Image from "next/image";
 import {TbChevronUp} from "react-icons/tb";
 
 function FooterApplication() {
     return (
-        <div className={styles.footerApplication}>
-            <span className={styles.footerApplicationChevron}><TbChevronUp /></span>
+        <div className="footerApplication">
+            <span className="footerApplicationChevron"><TbChevronUp /></span>
             <Container>
-                <div className={styles.footerApplicationWrapper}>
-                    <div className={styles.footerApplicationIntro}>
+                <div className="footerApplicationWrapper">
+                    <div className="footerApplicationIntro">
                         <h2>Get the Company Name App</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <div className={styles.footerApplicationBtnWrapper}>
+                        <div className="footerApplicationBtnWrapper">
                             <a href="#" className="me-3">
                                 <Image
                                     src="/images/app-btn.png"
@@ -31,7 +30,7 @@ function FooterApplication() {
                             </a>
                         </div>
                     </div>
-                    <div className={styles.footerApplicationImage}>
+                    <div className="footerApplicationImage">
                         <Image
                             src="/images/iphones.png"
                             alt="market"

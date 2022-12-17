@@ -1,6 +1,7 @@
 import SiteHead from "../common/Head";
 import Layout from "../components/layout/Layout";
 import HomePage from "../components/home/HomePage";
+import FooterApplication from "../common/FooterApplication";
 
 export default function Home() {
     return (
@@ -9,6 +10,7 @@ export default function Home() {
             <Layout>
                 <main className="main">
                     <HomePage />
+                    <FooterApplication />
                 </main>
             </Layout>
         </div>
