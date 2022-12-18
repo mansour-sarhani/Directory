@@ -1,7 +1,7 @@
 import styles from "./header.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import {BsFlag, BsGrid, BsHouseDoor, BsPersonCircle, BsPlusSquare} from "react-icons/bs";
+import { TbHome2, TbLayoutGrid, TbFlag, TbSquarePlus, TbUserCircle } from "react-icons/tb";
 import { useRouter } from "next/router";
 
 function TopHeader() {
@@ -22,31 +22,31 @@ function TopHeader() {
                 <ul>
                     <li>
                         <Link href={'/'} className={`nav-link ${router.pathname === "/" ? "active" : ""}`}>
-                            <BsHouseDoor className="me-1"/>
+                            <TbHome2 className="me-1"/>
                             Home
                         </Link>
                     </li>
                     <li>
                         <Link href={'/categories'} className={`nav-link ${router.pathname === "/categories" ? "active" : ""}`}>
-                            <BsGrid className="me-1"/>
+                            <TbLayoutGrid className="me-1"/>
                             Categories
                         </Link>
                     </li>
                     <li>
                         <Link href={'/countries'} className={`nav-link ${router.pathname === "/countries" ? "active" : ""}`}>
-                            <BsFlag className="me-1"/>
+                            <TbFlag className="me-1"/>
                             Countries
                         </Link>
                     </li>
                     <li>
                         <Link href={'/'}>
-                            <BsPlusSquare className="me-1"/>
+                            <TbSquarePlus className="me-1"/>
                             Add Post
                         </Link>
                     </li>
                     <li className={styles.headerLogin}>
                         <Link href={'/'}>
-                            <BsPersonCircle className="me-1"/>
+                            <TbUserCircle className="me-1"/>
                             Log in
                         </Link>
                     </li>

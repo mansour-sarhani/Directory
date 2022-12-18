@@ -9,6 +9,7 @@ body {
     --primary-color: #ffbe00;
     --alt-color: #1aa097;
     --dark-color: #051522;
+    --grey-color: #f3f4f8;
 }
 
 a {
@@ -35,7 +36,7 @@ a {
     align-items: center;
     justify-content: center;
     border-radius: 7px;
-    box-shadow: inset 0px -1px 1px 0px rgb(0 0 0 / 40%);
+    box-shadow: inset 0 -1px 1px 0 rgb(0 0 0 / 40%);
     border: 1px solid var(--primary-color);
 }
 
@@ -79,7 +80,7 @@ a {
 }
 
 .breadCrumb ul li svg {
-    color: var(--gold-color);
+    color: var(--primary-color);
     font-size: 20px;
 }
 
@@ -109,6 +110,157 @@ a {
     padding-right: 0;
 }
 
+.postsGrid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+}
+
+.postsGridItem {
+    background: #ffffff;
+    border-radius: 1em;
+}
+
+.postsGridItemImage a {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: 170px;
+}
+
+.postsGridItemImage img {
+    border-radius: 1em 1em 0 0;
+    object-fit: cover;
+}
+
+.postsGridItemContent {
+    padding: 15px;
+}
+
+.postsGridItemTitle {
+    color: #051522;
+    font-weight: bold;
+}
+
+.postsGridItemTitle:hover {
+    color: var(--primary-color);
+}
+
+.postsGridItemAuthor {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.postsGridItemAuthor span {
+    font-size: 13px;
+    opacity: 0.6;
+    color: #000;
+}
+
+.postsGridItemMeta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.postsGridItemVariable {
+    color: var(--primary-color);
+}
+
+.postsGridItemDate {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.paginationWrapper {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.paginationButtons {
+    display: flex;
+    align-items: center;
+}
+
+.paginationButtons button {
+    width: 170px;
+    height: 40px;
+    border-radius: 10px;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background-color: #ffffff;
+    margin-left: 10px;
+}
+
+.paginationButtons button:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.pagination .page-link {
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.pagination .active .page-link {
+    background-color: #051522;
+    color: #ffffff;
+}
+
+.homeSearchForm {
+    width: 100%;
+}
+
+.homeSearchField {
+    width: 100%;
+    position: relative;
+}
+
+.homeSearchField input {
+    padding: 20px 50% 20px 20px;
+    font-size: 16px;
+    border-radius: 3em;
+}
+
+.searchFormParts {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 30px;
+    top: 12px;
+}
+
+.searchFormLocation {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid rgba(0,0,0,.3);
+    padding-right: 15px;
+    margin-right: 15px;
+    opacity: .5;
+}
+
+.searchFormCategories {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    opacity: .5;
+}
+
+.searchFormCategories select {
+    border: none;
+}
+
+.searchBtn {
+    border-radius: 3em;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
 
 .footerApplication {
     width: 100%;
