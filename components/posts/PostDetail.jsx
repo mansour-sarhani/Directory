@@ -1,7 +1,6 @@
 import styles from "./posts.module.css"
 import PostHeader from "../../common/PostHeader";
 import {Container} from "react-bootstrap";
-import EmblaCarousel from "./carousel/EmblaCarousel";
 import {
     TbArrowsMaximize,
     TbBed,
@@ -14,6 +13,7 @@ import {
 } from "react-icons/tb";
 import Image from "next/image";
 import Link from "next/link";
+import PostCarousel from "../carousels/postSlider/postCarousel";
 
 const SLIDE_COUNT = 5;
 const slides = Array.from(Array(SLIDE_COUNT).keys());
@@ -23,7 +23,7 @@ function PostDetail() {
         <div className={styles.postDetail}>
             <PostHeader />
             <div className="postDetailCarousel">
-                <EmblaCarousel slides={slides} />
+                <PostCarousel slides={slides} />
             </div>
             <Container>
                 <div className={styles.postDetailWrapper}>

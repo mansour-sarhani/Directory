@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { PrevButton, NextButton } from "./EmblaCarouselButtons";
 import useEmblaCarousel from "embla-carousel-react";
-import { mediaByIndex } from "./media";
 import styles from "./embla.module.css";
 import Image from "next/image";
+import {postSlideByIndex} from "../../../public/carousel/postsMediaIndex";
 
-const EmblaCarousel = ({ slides }) => {
+const PostCarousel = ({ slides }) => {
     const [viewportRef, embla] = useEmblaCarousel({
         align: "center",
         skipSnaps: false,
@@ -36,7 +36,7 @@ const EmblaCarousel = ({ slides }) => {
                         <div className={styles.embla__slide} key={index}>
                             <div className={styles.embla__slide__inner}>
                                 <Image
-                                    src={mediaByIndex(index)}
+                                    src={postSlideByIndex(index)}
                                     alt='slider'
                                     fill
                                 />
@@ -51,4 +51,4 @@ const EmblaCarousel = ({ slides }) => {
     );
 };
 
-export default EmblaCarousel;
+export default PostCarousel;

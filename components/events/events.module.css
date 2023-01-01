@@ -118,7 +118,7 @@
     bottom: 0;
     width: 100px;
     height: 2px;
-    background-color: var(--gold-color);
+    background-color: var(--primary-color);
 }
 
 .eventDetailCalendarTitle {
@@ -146,7 +146,7 @@
 .eventDetailCalendarLink a {
     display: inline-flex;
     width: max-content;
-    color: var(--gold-color) !important;
+    color: var(--primary-color) !important;
     align-items: center;
 }
 
@@ -181,7 +181,7 @@
 }
 
 .activeItem .eventDetailCalendarDate {
-    background: var(--gold-color);
+    background: var(--primary-color);
 }
 
 .activeItem .eventDetailCalendarDate:before {
@@ -278,7 +278,7 @@
 .eventSocialWrapper {
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 15px;
 }
 
@@ -342,7 +342,7 @@
 .eventRelatedPostsWrapper {
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 20px;
 }
 
