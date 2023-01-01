@@ -110,6 +110,32 @@ a {
     padding-right: 0;
 }
 
+.sectionHeading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.sectionHeading:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.sectionHeading h5 {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
 .postsGrid {
     display: grid;
     grid-template-columns: auto auto auto auto;

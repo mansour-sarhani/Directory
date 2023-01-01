@@ -1,6 +1,4 @@
 import styles from "./home.module.css";
-import {Form} from "react-bootstrap";
-import {BsFillGeoAltFill, BsGrid, BsSearch} from "react-icons/bs";
 import SearchForm from "../../common/SearchForm";
 
 function HomeSearch() {
