@@ -6,7 +6,7 @@ import FooterApplication from "../common/FooterApplication";
 export default function AboutUs() {
     return (
         <div className="page about-us-page">
-            <SiteHead title="About" />
+            <SiteHead title="About Us" />
             <Layout>
                 <main className="main">
                     <AboutPage />

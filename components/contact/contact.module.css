@@ -1,0 +1,46 @@
+.contactPageWrapper {
+    width: 100%;
+}
+
+.contactUsBanner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    margin-bottom: 40px;
+    background-color: var(--primary-color);
+}
+
+.contactPageTabBtns {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    border-radius: 7px;
+}
+
+.contactPageTabBtns button {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 7px;
+    padding: 5px 20px;
+}
+
+.contactPageTabBtns button.activeBtn {
+    background-color: var(--primary-color);
+}
+
+.contactPageTabItem {
+    width: 70%;
+    margin: 40px auto;
+}
+
+.contactPageTabForm button {
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 0;
+    background-color: #d5d5d5;
+}
