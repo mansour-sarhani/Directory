@@ -1,0 +1,50 @@
+.homeSearchForm {
+    width: 100%;
+}
+
+.homeSearchField {
+    width: 100%;
+    position: relative;
+}
+
+.homeSearchField input {
+    padding: 20px 50% 20px 20px;
+    font-size: 16px;
+    border-radius: 3em;
+}
+
+.searchFormParts {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 30px;
+    top: 12px;
+}
+
+.searchFormLocation {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid rgba(0,0,0,.3);
+    padding-right: 15px;
+    margin-right: 15px;
+    opacity: .5;
+}
+
+.searchFormCategories {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    opacity: .5;
+}
+
+.searchFormCategories select {
+    border: none;
+}
+
+.searchBtn {
+    border-radius: 3em;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--primary-color);
+    color: #ffffff;
+}

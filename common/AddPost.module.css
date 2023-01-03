@@ -1,0 +1,27 @@
+.addPost {
+    width: 100%;
+    padding: 70px 0;
+}
+
+.addPostContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.addPostImage {
+    width: 50%;
+    position: relative;
+    height: 460px;
+}
+
+.addPostImage img {
+    height: auto !important;
+    object-fit: contain;
+}
+
+.addPostContent {
+    width: 50%;
+    padding-left: 50px;
+    padding-right: 50px;
+}

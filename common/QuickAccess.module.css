@@ -1,0 +1,29 @@
+.quickAccess {
+    width: 50%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quickAccessItem {
+    width: 16.6%;
+    border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+.quickAccessItem:last-child {
+    border-right: none;
+}
+
+.quickAccessItem a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #000;
+}
+
+.quickAccessItem svg {
+    font-size: 30px;
+}

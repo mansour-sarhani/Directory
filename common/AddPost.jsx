@@ -1,21 +1,21 @@
-import styles from './home.module.css'
-import { TbPlus } from "react-icons/tb";
+import styles from "./AddPost.module.css";
 import {Container} from "react-bootstrap";
 import Image from "next/image";
+import {TbPlus} from "react-icons/tb";
 
-function HomeAddPost() {
+function AddPost() {
     return (
-        <div className={styles.homeAddPost}>
+        <div className={styles.addPost}>
             <Container>
-                <div className={styles.homeAddPostContainer}>
-                    <div className={styles.homeAddPostImage}>
+                <div className={styles.addPostContainer}>
+                    <div className={styles.addPostImage}>
                         <Image
                             src="/images/add-post.jpg"
                             alt="market"
                             fill
                         />
                     </div>
-                    <div className={styles.homeAddPostContent}>
+                    <div className={styles.addPostContent}>
                         <h2>
                             Add your first Post
                             <br/>
@@ -33,4 +33,4 @@ function HomeAddPost() {
     );
 }
 
-export default HomeAddPost;
+export default AddPost;

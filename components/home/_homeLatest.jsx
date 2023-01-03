@@ -1,8 +1,15 @@
 import styles from './home.module.css'
 import {Container} from "react-bootstrap";
-import {TbChevronDown, TbClock, TbBuildingStore, TbCalendarEvent, TbLayoutGrid, TbMapPin, TbSettings, TbSpeakerphone} from "react-icons/tb";
+import {
+    TbChevronDown,
+    TbBuildingStore,
+    TbCalendarEvent,
+    TbLayoutGrid,
+    TbMapPin,
+    TbSettings,
+    TbSpeakerphone
+} from "react-icons/tb";
 import Link from "next/link";
-import Image from "next/image";
 import PostsGrid from "../../common/PostsGrid";
 
 function HomeLatest() {
@@ -50,7 +57,7 @@ function HomeLatest() {
                         </button>
                     </div>
                 </div>
-                <PostsGrid />
+                <PostsGrid start={0} end={12} />
                 <div className={styles.homeLatestCta}>
                     <Link href={'/'}>
                         <button className="custom-btn">See More</button>

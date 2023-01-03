@@ -1,21 +1,20 @@
-import Pagination from 'react-bootstrap/Pagination';
+import styles from './PostsPagination.module.css'
 import { TbChevronLeft, TbChevronRight } from "react-icons/tb";
+import Link from "next/link";
 
 function PostsPagination() {
-    let active = 1;
-    let items = [];
-    for (let number = 1; number <= 5; number++) {
-        items.push(
-            <Pagination.Item key={number} active={number === active}>
-                {number}
-            </Pagination.Item>,
-        );
-    }
-
     return (
-        <div className="paginationWrapper">
-            <Pagination>{items}</Pagination>
-            <div className="paginationButtons">
+        <div className={styles.pagination}>
+            <div className={styles.paginationWrapper}>
+                <ul>
+                    <li><Link href={'/'} className={styles.activePage}>1</Link></li>
+                    <li><Link href={'/'}>2</Link></li>
+                    <li><Link href={'/'}>3</Link></li>
+                    <li><Link href={'/'}>4</Link></li>
+                    <li><Link href={'/'}>5</Link></li>
+                </ul>
+            </div>
+            <div className={styles.paginationButtons}>
                 <button>
                     <TbChevronLeft />
                     Previous Page

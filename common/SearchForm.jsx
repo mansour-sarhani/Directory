@@ -1,28 +1,29 @@
+import styles from './SearchForm.module.css'
 import {Form} from "react-bootstrap";
-import {BsFillGeoAltFill, BsGrid, BsSearch} from "react-icons/bs";
+import { TbMapPin, TbLayoutGrid, TbSearch } from "react-icons/tb";
 
 function SearchForm() {
     return (
-        <div className="homeSearchForm">
+        <div className={styles.homeSearchForm}>
             <Form>
-                <Form.Group className="homeSearchField" controlId="formBasicEmail">
+                <Form.Group className={styles.homeSearchField} controlId="search">
                     <Form.Control type="text" placeholder="What are you looking for ..."/>
-                    <div className="searchFormParts">
-                        <div className="searchFormLocation">
-                            <BsFillGeoAltFill className="me-2"/>
+                    <div className={styles.searchFormParts}>
+                        <div className={styles.searchFormLocation}>
+                            <TbMapPin className="me-1"/>
                             City: <span className="ms-2">London</span>
                         </div>
-                        <div className="searchFormCategories">
-                            <BsGrid/>
-                            <Form.Select aria-label="Default select">
+                        <div className={styles.searchFormCategories}>
+                            <TbLayoutGrid />
+                            <Form.Select aria-label="Category Select">
                                 <option>Categories:</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
                             </Form.Select>
                         </div>
-                        <button className="searchBtn" type="submit">
-                            <BsSearch className="me-2"/>
+                        <button className={styles.searchBtn} type="submit">
+                            <TbSearch className="me-1"/>
                             Search
                         </button>
                     </div>

@@ -9,10 +9,12 @@ import {
     TbBrandFacebook,
     TbBrandTwitter,
     TbBrandYoutube,
-    TbBrandWhatsapp, TbChevronRight
+    TbBrandWhatsapp,
+    TbChevronRight
 } from "react-icons/tb";
 import { AiOutlineDislike, AiOutlineLike } from "react-icons/ai";
-import BlogGrid from "./BlogGrid";
+import {blogData as relatedPosts} from "../../data/blogData";
+import BlogItem from "./BlogItem";
 
 function BlogPostPage() {
     return (
@@ -112,7 +114,7 @@ function BlogPostPage() {
                     <Row>
                         <Col xs={12} md={8}>
                             <div className={styles.blogPostCommentsSection}>
-                                <div className={styles.blogPostCommentHeading}>
+                                <div className="sectionHeading">
                                     <h5>Comments</h5>
                                 </div>
                                 <div className={styles.blogPostCommentsWrapper}>
@@ -177,7 +179,7 @@ function BlogPostPage() {
                         </Col>
                         <Col xs={12} md={4}>
                             <div className={styles.blogPostCommentReply}>
-                                <div className={styles.blogPostCommentHeading}>
+                                <div className="sectionHeading">
                                     <h5>Your Comment</h5>
                                 </div>
                                 <div className={styles.blogPostCommentForm}>
@@ -207,18 +209,18 @@ function BlogPostPage() {
                     </Row>
                 </div>
                 <div className={styles.blogPostRelated}>
-                    <div className={styles.blogPostCommentHeading}>
-                        <div className={styles.blogPostRelatedTitle}>
-                            <h5>Similar Posts</h5>
-                        </div>
-                        <div className={styles.blogPostRelatedLink}>
-                            <Link href={'/'}>
-                                View All
-                                <TbChevronRight />
-                            </Link>
-                        </div>
+                    <div className="sectionHeading">
+                        <h5>Similar Posts</h5>
+                        <Link href={'/'}>
+                            View all
+                            <TbChevronRight />
+                        </Link>
                     </div>
-                    <BlogGrid />
+                    <div className={styles.blogGrid}>
+                        {relatedPosts && relatedPosts.slice(0, 4).map(post => (
+                            <BlogItem post={post} key={post.id} />
+                        ))}
+                    </div>
                 </div>
             </Container>
         </div>

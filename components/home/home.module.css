@@ -28,36 +28,6 @@
     text-align: center;
 }
 
-.homeQuickAccess {
-    width: 50%;
-    height: 25%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.homeQuickAccessItem {
-    width: 16.6%;
-    border-right: 1px solid rgba(0,0,0,0.1);
-}
-
-.homeQuickAccessItem:last-child {
-    border-right: none;
-}
-
-.homeQuickAccessItem a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    color: #000;
-}
-
-.homeQuickAccessItem svg {
-    font-size: 30px;
-}
-
 .homeTopBanners {
     width: 100%;
     display: flex;
@@ -326,32 +296,6 @@
     margin-top: 30px;
 }
 
-.homeAddPost {
-    width: 100%;
-    padding: 70px 0;
-}
 
-.homeAddPostContainer {
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.homeAddPostImage {
-    width: 50%;
-    position: relative;
-    height: 460px;
-}
-
-.homeAddPostImage img {
-    height: auto !important;
-    object-fit: contain;
-}
-
-.homeAddPostContent {
-    width: 50%;
-    padding-left: 50px;
-    padding-right: 50px;
-}
 
 

@@ -1,6 +1,7 @@
 import styles from './about.module.css'
 import {Container} from "react-bootstrap";
 import Image from "next/image";
+import {teamData} from '/data/teamData'
 
 function OurTeam() {
     return (
@@ -10,108 +11,25 @@ function OurTeam() {
                     <h5>Our Team</h5>
                 </div>
                 <div className={styles.ourTeamGrid}>
-                    <div className={styles.ourTeamItem}>
-                        <div className={styles.ourTeamItemImg}>
-                            <Image
-                                src='/images/image-5.jpg'
-                                alt='member'
-                                fill
-                            />
-                        </div>
-                        <div className={styles.ourTeamItemContent}>
+                    {teamData && teamData.map(member => (
+                        <div key={member.id} className={styles.ourTeamItem}>
+                            <div className={styles.ourTeamItemImg}>
+                                <Image
+                                    src={member.image}
+                                    alt={member.name}
+                                    fill
+                                />
+                            </div>
+                            <div className={styles.ourTeamItemContent}>
                             <span className={styles.ourTeamItemName}>
-                                Mansour Jamshidi
+                                {member.name}
                             </span>
-                            <span className={styles.ourTeamItemJob}>
-                                CEO
+                                <span className={styles.ourTeamItemJob}>
+                                {member.position}
                             </span>
+                            </div>
                         </div>
-                    </div>
-                    <div className={styles.ourTeamItem}>
-                        <div className={styles.ourTeamItemImg}>
-                            <Image
-                                src='/images/image-5.jpg'
-                                alt='member'
-                                fill
-                            />
-                        </div>
-                        <div className={styles.ourTeamItemContent}>
-                            <span className={styles.ourTeamItemName}>
-                                Mansour Jamshidi
-                            </span>
-                            <span className={styles.ourTeamItemJob}>
-                                CEO
-                            </span>
-                        </div>
-                    </div>
-                    <div className={styles.ourTeamItem}>
-                        <div className={styles.ourTeamItemImg}>
-                            <Image
-                                src='/images/image-5.jpg'
-                                alt='member'
-                                fill
-                            />
-                        </div>
-                        <div className={styles.ourTeamItemContent}>
-                            <span className={styles.ourTeamItemName}>
-                                Mansour Jamshidi
-                            </span>
-                            <span className={styles.ourTeamItemJob}>
-                                CEO
-                            </span>
-                        </div>
-                    </div>
-                    <div className={styles.ourTeamItem}>
-                        <div className={styles.ourTeamItemImg}>
-                            <Image
-                                src='/images/image-5.jpg'
-                                alt='member'
-                                fill
-                            />
-                        </div>
-                        <div className={styles.ourTeamItemContent}>
-                            <span className={styles.ourTeamItemName}>
-                                Mansour Jamshidi
-                            </span>
-                            <span className={styles.ourTeamItemJob}>
-                                CEO
-                            </span>
-                        </div>
-                    </div>
-                    <div className={styles.ourTeamItem}>
-                        <div className={styles.ourTeamItemImg}>
-                            <Image
-                                src='/images/image-5.jpg'
-                                alt='member'
-                                fill
-                            />
-                        </div>
-                        <div className={styles.ourTeamItemContent}>
-                            <span className={styles.ourTeamItemName}>
-                                Mansour Jamshidi
-                            </span>
-                            <span className={styles.ourTeamItemJob}>
-                                CEO
-                            </span>
-                        </div>
-                    </div>
-                    <div className={styles.ourTeamItem}>
-                        <div className={styles.ourTeamItemImg}>
-                            <Image
-                                src='/images/image-5.jpg'
-                                alt='member'
-                                fill
-                            />
-                        </div>
-                        <div className={styles.ourTeamItemContent}>
-                            <span className={styles.ourTeamItemName}>
-                                Mansour Jamshidi
-                            </span>
-                            <span className={styles.ourTeamItemJob}>
-                                CEO
-                            </span>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </Container>
         </div>

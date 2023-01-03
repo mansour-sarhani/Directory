@@ -46,70 +46,6 @@ a {
     color: var(--primary-color);
 }
 
-.postHeader {
-    width: 100%;
-    padding: 20px 0;
-}
-
-.postHeaderWrapper {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.breadCrumb ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-.breadCrumb ul li {
-    margin-right: 5px;
-}
-
-.breadCrumb ul li:last-child {
-    margin-right: 0;
-}
-
-.breadCrumb ul li a {
-    padding-right: 5px;
-    color: #c6c6c6 !important;
-}
-
-.breadCrumb ul li svg {
-    color: var(--primary-color);
-    font-size: 20px;
-}
-
-.socialIcons ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-.socialIcons ul li {
-    margin-right: 5px;
-}
-
-.socialIcons ul li:last-child {
-    margin-right: 0;
-}
-
-.socialIcons ul li a {
-    padding-right: 5px;
-    color: #a1a1a1 !important;
-    font-size: 22px;
-}
-
-.socialIcons ul li:last-child a {
-    padding-right: 0;
-}
-
 .sectionHeading {
     width: 100%;
     display: flex;
@@ -136,206 +72,30 @@ a {
     align-items: center;
 }
 
-.postsGrid {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 20px;
-}
-
-.postsGridItem {
-    background: #ffffff;
-    border-radius: 1em;
-}
-
-.postsGridItemImage a {
-    position: relative;
-    width: 100%;
-    display: flex;
-    height: 170px;
-}
-
-.postsGridItemImage img {
-    border-radius: 1em 1em 0 0;
-    object-fit: cover;
-}
-
-.postsGridItemContent {
-    padding: 15px;
-}
-
-.postsGridItemTitle {
-    color: #051522;
-    font-weight: bold;
-}
-
-.postsGridItemTitle:hover {
-    color: var(--primary-color);
-}
-
-.postsGridItemAuthor {
-    font-size: 12px;
-    color: #ccc;
-}
-
-.postsGridItemAuthor span {
-    font-size: 13px;
-    opacity: 0.6;
-    color: #000;
-}
-
-.postsGridItemMeta {
-    display: flex;
+.sectionHeading a {
+    display: inline-flex;
     align-items: center;
-    justify-content: space-between;
+    color: var(--primary-color) !important;
 }
 
-.postsGridItemVariable {
-    color: var(--primary-color);
-}
-
-.postsGridItemDate {
-    font-size: 12px;
-    color: #ccc;
-}
-
-.paginationWrapper {
-    width: 100%;
-    margin: 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.paginationButtons {
-    display: flex;
-    align-items: center;
-}
-
-.paginationButtons button {
-    width: 170px;
-    height: 40px;
-    border-radius: 10px;
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    background-color: #ffffff;
-    margin-left: 10px;
-}
-
-.paginationButtons button:hover {
-    background-color: var(--primary-color);
-    color: #ffffff;
-}
-
-.pagination .page-link {
-    border: none;
-    border-radius: 5px;
-    margin-right: 5px;
-}
-
-.pagination .active .page-link {
-    background-color: #051522;
-    color: #ffffff;
-}
-
-.homeSearchForm {
-    width: 100%;
-}
-
-.homeSearchField {
-    width: 100%;
-    position: relative;
-}
-
-.homeSearchField input {
-    padding: 20px 50% 20px 20px;
-    font-size: 16px;
-    border-radius: 3em;
-}
-
-.searchFormParts {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    right: 30px;
-    top: 12px;
-}
-
-.searchFormLocation {
-    display: flex;
-    align-items: center;
-    border-right: 1px solid rgba(0,0,0,.3);
-    padding-right: 15px;
-    margin-right: 15px;
-    opacity: .5;
-}
-
-.searchFormCategories {
-    display: flex;
-    align-items: center;
-    padding-right: 15px;
-    opacity: .5;
-}
-
-.searchFormCategories select {
-    border: none;
-}
-
-.searchBtn {
-    border-radius: 3em;
-    padding: 10px 20px;
-    border: none;
-    background-color: var(--primary-color);
-    color: #ffffff;
-}
-
-.footerApplication {
-    width: 100%;
-    background: var(--primary-color);
-    position: relative;
-}
-
-.footerApplication:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    right: 0;
-    left: 0;
-    top: 0;
-    background: #fff;
-    clip-path: ellipse(52% 100% at 50% 0%);
-}
-
-.footerApplicationChevron {
+.footerChevron {
     position: absolute;
     font-size: 35px;
-    background: var(--primary-color);
-    color: #ffffff;
+    background: #ffffff;
+    color: #333333;
     border-radius: 50%;
     width: 120px;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    bottom: -25px;
+    top: -25px;
     right: 48%;
     left: 48%;
+    cursor: pointer;
 }
 
-.footerApplicationWrapper {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-.footerApplicationIntro {
-    width: 100%;
-    padding-top: 150px;
-    padding-bottom: 50px;
-}
-
-.footerApplicationImage {
-    position: absolute;
-    bottom: -40px;
-    right: 0;
+.home-page .footerChevron,
+.about-us-page .footerChevron{
+    background-color: var(--primary-color);
 }

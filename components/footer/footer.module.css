@@ -1,12 +1,13 @@
 .footer {
     width: 100%;
     background-color: var(--dark-color);
+    position: relative;
 }
 
 .footerWrapper {
     width: 100%;
     background: var(--dark-color);
-    padding: 50px 0;
+    padding: 80px 0 50px;
 }
 
 .footerLinks h5 {

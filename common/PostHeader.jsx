@@ -1,13 +1,20 @@
+import styles from './PostHeader.module.css'
 import Link from "next/link";
 import {Container} from "react-bootstrap";
-import {TbBrandFacebook, TbBrandTwitter, TbBrandWhatsapp, TbChevronRight, TbLink} from "react-icons/tb";
+import {
+    TbBrandFacebook,
+    TbBrandTwitter,
+    TbBrandWhatsapp,
+    TbChevronRight,
+    TbLink
+} from "react-icons/tb";
 
 function PostHeader() {
     return (
-        <div className="postHeader">
+        <div className={styles.postHeader}>
             <Container>
-                <div className="postHeaderWrapper">
-                    <div className="breadCrumb">
+                <div className={styles.postHeaderWrapper}>
+                    <div className={styles.breadCrumb}>
                         <ul>
                             <li>
                                 <Link href={'/'}>
@@ -27,12 +34,12 @@ function PostHeader() {
                                 </Link>
                                 <TbChevronRight />
                             </li>
-                            <li className="last-link">
+                            <li className={styles.lastLink}>
                                 Luxury Property
                             </li>
                         </ul>
                     </div>
-                    <div className="socialIcons">
+                    <div className={styles.socialIcons}>
                         <ul>
                             <li>
                                 <a href="#">

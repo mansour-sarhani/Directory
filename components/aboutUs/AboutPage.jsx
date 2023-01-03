@@ -2,7 +2,7 @@ import styles from './about.module.css'
 import AboutIntro from "./_aboutIntro";
 import AboutContent from "./_aboutContent";
 import OurTeam from "./_ourTeam";
-import HomeAddPost from "../home/_homeAddPost";
+import AddPost from "../../common/AddPost";
 
 function AboutPage() {
     return (
@@ -10,7 +10,7 @@ function AboutPage() {
             <AboutIntro />
             <AboutContent />
             <OurTeam />
-            <HomeAddPost />
+            <AddPost />
         </div>
     );
 }

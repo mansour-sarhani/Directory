@@ -1,5 +1,5 @@
 import styles from './about.module.css'
-import HomeQuickAccess from "../home/_homeQuickAccess";
+import QuickAccess from "../../common/QuickAccess";
 
 function AboutIntro() {
     return (
@@ -16,7 +16,7 @@ function AboutIntro() {
                     </p>
                 </div>
             </div>
-            <HomeQuickAccess />
+            <QuickAccess />
         </div>
     );
 }

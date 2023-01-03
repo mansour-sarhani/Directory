@@ -4,12 +4,13 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from 'embla-carousel-autoplay'
 import styles from "./embla.module.css";
 import Image from "next/image";
-import {blogSlidesByIndex} from "../../../public/carousel/blogMediaIndex";
 import Link from "next/link";
 import { TbClock } from "react-icons/tb";
+import {blogData} from "../../../data/blogData";
 
-const BlogCarousel = ( props ) => {
-    const { slides } = props
+const BlogCarousel = ({start, end}) => {
+    const slides = blogData.slice(start, end)
+
     const [emblaRef, emblaApi] = useEmblaCarousel({
         loop: true,
         skipSnaps: false,
@@ -39,27 +40,30 @@ const BlogCarousel = ( props ) => {
         <div className={styles.embla}>
             <div className={styles.embla__viewport} ref={emblaRef}>
                 <div className={styles.embla__container}>
-                    {slides.map((index) => (
-                        <div className={styles.embla__slide} key={index}>
-                            <Image
-                                className={styles.embla__slide__img}
-                                src={blogSlidesByIndex(index)}
-                                alt="blog-post"
-                            />
+                    {slides.map((slide) => (
+                        <div key={slide.id} className={styles.embla__slide}>
+                            <div className={styles.blog_slide_image}>
+                                <Image
+                                    className={styles.embla__slide__img}
+                                    src={slide.image}
+                                    alt={slide.title}
+                                    fill
+                                />
+                            </div>
                             <div className={styles.blog_slide_content}>
                                 <div className={styles.blog_slide_category}>
                                     <Link href={'/'}>
-                                        Category
+                                        {slide.category}
                                     </Link>
                                 </div>
                                 <div className={styles.blog_slide_Title}>
                                     <Link href={'/'}>
-                                        <h3>This will be the title for some sample post</h3>
+                                        <h3>{slide.title}</h3>
                                     </Link>
                                 </div>
                                 <div className={styles.blog_slide_date}>
                                     <TbClock className="me-1" />
-                                    3 Days ago
+                                    {slide.publishDate}
                                 </div>
                             </div>
                         </div>

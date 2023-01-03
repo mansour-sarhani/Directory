@@ -1,7 +1,7 @@
 .embla {
     --slide-spacing: 1rem;
     --slide-size: 100%;
-    --slide-height: 400px;
+    --slide-height: 350px;
     padding: 30px;
     background-color: var(--grey-color);
     border-radius: 1.5em;
@@ -25,10 +25,14 @@
     position: relative;
     display: flex;
 }
-.embla__slide__img {
+.blog_slide_image {
     display: block;
     height: var(--slide-height);
     width: 65%;
+    position: relative;
+}
+
+.embla__slide__img {
     object-fit: cover;
     border-radius: 1em;
 }
