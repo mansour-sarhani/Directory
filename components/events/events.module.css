@@ -101,26 +101,6 @@
     margin-bottom: 15px;
 }
 
-.eventDetailHeading {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-    position: relative;
-}
-
-.eventDetailHeading:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100px;
-    height: 2px;
-    background-color: var(--primary-color);
-}
-
 .eventDetailCalendarTitle {
     width: 100%;
     display: flex;
@@ -341,6 +321,9 @@
 
 .eventRelatedPostsWrapper {
     width: 100%;
+}
+
+.eventsGrid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 20px;

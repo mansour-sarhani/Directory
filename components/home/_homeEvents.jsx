@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { BsGeoAlt, BsMusicNoteList } from "react-icons/bs";
 import { MdWorkOutline } from "react-icons/md";
+import {eventData} from "../../data/eventData";
 
 function HomeEvents() {
     return (

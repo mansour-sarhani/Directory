@@ -58,10 +58,8 @@ function PostDetail() {
                             </div>
                         </div>
                         <div className={styles.postDetailDesc}>
-                            <div className={styles.postDetailHeading}>
-                                <div className={styles.postDetailTitle}>
-                                    <h5>Description</h5>
-                                </div>
+                            <div className="sectionHeading">
+                                <h5>Description</h5>
                             </div>
                             <div className={styles.postDetailDescText}>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis, cupiditate earum id labore laborum mollitia natus pariatur rem repudiandae rerum sequi unde veritatis voluptas voluptatem! Dolorum numquam sed temporibus.</p>
@@ -71,10 +69,8 @@ function PostDetail() {
                             </div>
                         </div>
                         <div className={styles.postDetailLocation}>
-                            <div className={styles.postDetailHeading}>
-                                <div className={styles.postDetailTitle}>
-                                    <h5>Location on map</h5>
-                                </div>
+                            <div className="sectionHeading">
+                                <h5>Location on map</h5>
                             </div>
                             <div className={styles.postDetailLocationMap}>
                                 <iframe
@@ -112,16 +108,12 @@ function PostDetail() {
                     </div>
                 </div>
                 <div className={styles.postRelated}>
-                    <div className={styles.postDetailHeading}>
-                        <div className={styles.postDetailTitle}>
-                            <h5>Similar Properties</h5>
-                        </div>
-                        <div className={styles.postDetailLink}>
-                            <Link href={'/'}>
-                                View All
-                                <TbChevronRight />
-                            </Link>
-                        </div>
+                    <div className="sectionHeading">
+                        <h5>Similar Properties</h5>
+                        <Link href={'/'}>
+                            View All
+                            <TbChevronRight />
+                        </Link>
                     </div>
                     <div className={styles.postRelatedWrapper}>
                         <div className={styles.postRelatedItem}>

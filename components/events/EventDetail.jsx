@@ -13,6 +13,8 @@ import {
     TbBrandWhatsapp
 } from "react-icons/tb";
 import Link from "next/link";
+import EventsGrid from "./_eventsGrid";
+
 
 const activeCalendarItemClass = [styles.eventDetailCalendarItem, styles.activeItem].join(" ")
 const CalendarItemClass = [styles.eventDetailCalendarItem].join(" ")
@@ -85,17 +87,12 @@ function EventDetail() {
                     <div className={styles.evenDetailContentWrapper}>
                         <div className={styles.eventDetailContentMain}>
                             <div className={styles.eventDetailCalendar}>
-                                <div className={styles.eventDetailHeading}>
-                                    <div className={styles.eventDetailCalendarTitle}>
-                                        <h5>Upcoming Concerts</h5>
-                                        <span>30</span>
-                                    </div>
-                                    <div className={styles.eventDetailCalendarLink}>
-                                        <Link href={'/'}>
-                                            View All
-                                            <TbChevronRight />
-                                        </Link>
-                                    </div>
+                                <div className="sectionHeading">
+                                    <h5>Upcoming Concerts <span>30</span></h5>
+                                    <Link href={'/'}>
+                                        View All
+                                        <TbChevronRight />
+                                    </Link>
                                 </div>
                                 <div className={styles.eventDetailCalendarWrapper}>
                                     <div className={activeCalendarItemClass}>
@@ -177,7 +174,7 @@ function EventDetail() {
                                 </div>
                             </div>
                             <div className={styles.eventDetailReview}>
-                                <div className={styles.eventDetailHeading}>
+                                <div className="sectionHeading">
                                     <h5>Live Reviews</h5>
                                 </div>
                                 <div className={styles.eventDetailReviewContent}>
@@ -190,7 +187,7 @@ function EventDetail() {
                             <Row>
                                 <Col>
                                     <div className={styles.eventDetailAdditional}>
-                                        <div className={styles.eventDetailHeading}>
+                                        <div className="sectionHeading">
                                             <h5>Additional Details</h5>
                                         </div>
                                         <div className={styles.eventDetailAddiItemWrapper}>
@@ -207,7 +204,7 @@ function EventDetail() {
                                 </Col>
                                 <Col>
                                     <div className={styles.eventDetailSocialShare}>
-                                        <div className={styles.eventDetailHeading}>
+                                        <div className="sectionHeading">
                                             <h5>Share this Event</h5>
                                         </div>
                                         <div className={styles.eventSocialWrapper}>
@@ -238,7 +235,7 @@ function EventDetail() {
                         </div>
                         <div className={styles.eventDetailContentSide}>
                             <div className={styles.eventDetailBio}>
-                                <div className={styles.eventDetailHeading}>
+                                <div className="sectionHeading">
                                     <h5>Biography</h5>
                                 </div>
                                 <div className={styles.eventDetailBioContent}>
@@ -255,110 +252,15 @@ function EventDetail() {
                         </div>
                     </div>
                     <div className={styles.eventRelatedPosts}>
-                        <div className={styles.eventDetailHeading}>
-                            <div className={styles.eventDetailCalendarTitle}>
-                                <h5>Similar Events</h5>
-                            </div>
-                            <div className={styles.eventDetailCalendarLink}>
-                                <Link href={'/'}>
-                                    View All
-                                    <TbChevronRight />
-                                </Link>
-                            </div>
+                        <div className="sectionHeading">
+                            <h5>Similar Events</h5>
+                            <Link href={'/'}>
+                                View All
+                                <TbChevronRight />
+                            </Link>
                         </div>
                         <div className={styles.eventRelatedPostsWrapper}>
-                            <div className={styles.eventRelatedPostItem}>
-                                <div className={styles.eventRelatedPostItemImage}>
-                                    <Link href={'/'}>
-                                        <Image
-                                            src="/images/image-2.jpg"
-                                            alt="event"
-                                            fill
-                                        />
-                                    </Link>
-                                </div>
-                                <div className={styles.eventRelatedPostItemContent}>
-                                    <div className={styles.eventDetailCalendarDate}>
-                                        <span className={styles.eventDetailCalendarDay}>11</span>
-                                        <span className={styles.eventDetailCalendarMonth}>Nov</span>
-                                    </div>
-                                    <div className={styles.eventRelatedPostText}>
-                                        <Link href={'/'}>
-                                            <h5>John Doe</h5>
-                                        </Link>
-                                        <span>National Stadium, London</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className={styles.eventRelatedPostItem}>
-                                <div className={styles.eventRelatedPostItemImage}>
-                                    <Link href={'/'}>
-                                        <Image
-                                            src="/images/image-2.jpg"
-                                            alt="event"
-                                            fill
-                                        />
-                                    </Link>
-                                </div>
-                                <div className={styles.eventRelatedPostItemContent}>
-                                    <div className={styles.eventDetailCalendarDate}>
-                                        <span className={styles.eventDetailCalendarDay}>11</span>
-                                        <span className={styles.eventDetailCalendarMonth}>Nov</span>
-                                    </div>
-                                    <div className={styles.eventRelatedPostText}>
-                                        <Link href={'/'}>
-                                            <h5>John Doe</h5>
-                                        </Link>
-                                        <span>National Stadium, London</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className={styles.eventRelatedPostItem}>
-                                <div className={styles.eventRelatedPostItemImage}>
-                                    <Link href={'/'}>
-                                        <Image
-                                            src="/images/image-2.jpg"
-                                            alt="event"
-                                            fill
-                                        />
-                                    </Link>
-                                </div>
-                                <div className={styles.eventRelatedPostItemContent}>
-                                    <div className={styles.eventDetailCalendarDate}>
-                                        <span className={styles.eventDetailCalendarDay}>11</span>
-                                        <span className={styles.eventDetailCalendarMonth}>Nov</span>
-                                    </div>
-                                    <div className={styles.eventRelatedPostText}>
-                                        <Link href={'/'}>
-                                            <h5>John Doe</h5>
-                                        </Link>
-                                        <span>National Stadium, London</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className={styles.eventRelatedPostItem}>
-                                <div className={styles.eventRelatedPostItemImage}>
-                                    <Link href={'/'}>
-                                        <Image
-                                            src="/images/image-2.jpg"
-                                            alt="event"
-                                            fill
-                                        />
-                                    </Link>
-                                </div>
-                                <div className={styles.eventRelatedPostItemContent}>
-                                    <div className={styles.eventDetailCalendarDate}>
-                                        <span className={styles.eventDetailCalendarDay}>11</span>
-                                        <span className={styles.eventDetailCalendarMonth}>Nov</span>
-                                    </div>
-                                    <div className={styles.eventRelatedPostText}>
-                                        <Link href={'/'}>
-                                            <h5>John Doe</h5>
-                                        </Link>
-                                        <span>National Stadium, London</span>
-                                    </div>
-                                </div>
-                            </div>
+                            <EventsGrid start={0} end={4} />
                         </div>
                     </div>
                 </Container>
